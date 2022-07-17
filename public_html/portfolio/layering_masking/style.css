@@ -1,0 +1,19 @@
+.lrg {
+  position: absolute;
+  width: 40%;
+  height: 40%;
+  border: black solid 1.7px;
+  border-radius: 7px;
+}.med {
+  position: absolute;
+  width: 40%;
+  height: 40%;
+  border: black solid 1.7px;
+  border-radius: 7px;
+}.sml {
+  position: absolute;
+  width: 10%;
+  height: 40%;
+  border: black solid 1.7px;
+  border-radius: 7px;
+}

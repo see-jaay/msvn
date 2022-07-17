@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <site_page name="Home Page" source_php="home_page.php" source_xml="home_page.xml"></site_page>
+</root>

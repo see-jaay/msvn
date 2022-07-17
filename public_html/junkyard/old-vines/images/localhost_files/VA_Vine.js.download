@@ -1,0 +1,243 @@
+function randomFlt(min, max)
+{
+	return Math.random()*(max-min+1)+min;
+}
+
+function randomInt(min, max)
+{
+	return Math.floor(Math.random()*(max-min+1)+min);
+}
+
+class Vine {
+
+	constructor (count, length, mass, tension, pos) {
+		this.head = new Node();
+		this.nodes = [];
+
+		this.nodeCount = count; 
+		this.length = length;
+		this.mass = mass;
+		this.tension = tension;
+		this.pos = pos;
+
+		this.segLength = length/count;
+	}
+
+	Init()
+	{
+		for(var i = 0; i < this.nodeCount; i++)
+		{
+			var newNode = new Node();
+			this.AddNode(newNode);
+		}
+
+		this.head.parent = this;
+		this.head.Init(true);
+
+		for(var i = 0; i < this.nodeCount; i++)
+		{
+			if(i > 0)
+			{
+				this.nodes[i].SetPrevious(this.nodes[i-1]);
+				this.nodes[i-1].SetNext(this.nodes[i]);
+			}
+			else if(i == 0)
+			{
+				this.nodes[i].SetPrevious(this.head);
+				this.head.SetNext(this.nodes[i]);
+			}
+			this.nodes[i].Init(false);
+		}
+	}
+
+	Update(dt)
+	{
+		this.head.Update(dt);
+		for(var i = 0; i < this.nodeCount; i++)
+		{
+			this.nodes[i].Update(dt);
+		}
+	}
+
+	Draw(ctx)
+	{
+		this.head.Draw(ctx);
+		for(var i = 0; i < this.nodeCount; i++)
+		{
+			this.nodes[i].Draw(ctx);
+		}
+	}
+
+	AddNode(node)
+	{
+		node.parent = this;
+		this.nodes.push(node);
+	}
+
+	FollowMouse(e)
+	{
+		this.pos = new Vector3(e.pageX, e.pageY);
+
+		this.head.pos.x = e.pageX;
+		this.head.pos.y = e.pageY;
+
+	}
+
+	ApplyWind(force, dir)
+	{
+		for(var i = 0; i < this.nodeCount; i++)
+		{
+		
+		if(randomInt(0, 1000) > 500)
+			this.nodes[i].AddForce(randomFlt(0,force), dir);
+		}
+	}
+
+}
+
+class Node {
+	constructor ()
+	{
+		this.pos = new Vector3(0,0,0);
+		this.mass;
+		this.previousNode = null;
+		this.nextNode = null;
+		this.parent;
+		this.isFixed = false;
+		this.velocity = new Vector3(0,0,0);
+		this.accel = new Vector3(0,0,0);
+		this.netForce = new Vector3(0,0,0);
+	}
+
+	Init(fixed)
+	{
+		this.mass = this.parent.mass/this.parent.nodeCount;
+		this.isFixed = fixed;
+
+		if(this.previousNode != null)
+		{
+			this.pos.x = this.previousNode.pos.x - this.parent.segLength/Math.sqrt(2);
+			this.pos.y = this.previousNode.pos.y + this.parent.segLength/Math.sqrt(2);
+		}
+		else
+		{
+			this.pos = this.parent.pos;
+		}
+	}
+
+	SetPrevious(node)
+	{
+		this.previousNode = node;
+	}
+
+	SetNext(node)
+	{
+		this.nextNode = node;
+	}
+
+	CorrectPos(dt)
+	{
+
+		var prevSegDist = new Vector3(0,0,0), stretchPrev = 0;
+
+		if(this.previousNode != null)
+			prevSegDist = this.previousNode.pos.Sub(this.pos, 1);
+
+		stretchPrev = (prevSegDist.Mag() - this.parent.segLength);
+
+		var prevSegDir = prevSegDist.Divs(prevSegDist.Mag(),1);
+
+		this.pos.Add(prevSegDir.Mults(stretchPrev,1).Mults(dt*100,1));
+	}
+
+	CalcNetForce(dt)
+	{
+		var prevSegDist = new Vector3(0,0,0), nextSegDist = new Vector3(0,0,0),
+			stretchPrev = 0, stretchNext = 0;
+
+		if(this.previousNode != null)
+			prevSegDist = this.previousNode.pos.Sub(this.pos, 1);
+
+		if(this.nextNode != null)
+			nextSegDist = this.nextNode.pos.Sub(this.pos,1);
+
+		var prevSegDir = prevSegDist.Divs(prevSegDist.Mag(),1);
+		var nextSegDir = nextSegDist.Divs(nextSegDist.Mag(),1);
+
+		stretchPrev = (prevSegDist.Mag() - this.parent.segLength);
+		stretchNext = (nextSegDist.Mag() - this.parent.segLength);
+
+
+
+		// console.log(this.previousNode.pos);
+		// if(prevSegDist.Mag() < this.parent.segLength)
+		// {t
+		// 	stretchPrev *=-1;
+		// 	stretchNext *= -1;
+		// }
+
+		// var prevTension = prevSegDir.Mults(this.parent.tension * stretchPrev,1);
+		// var nextTension = nextSegDir.Mults(this.parent.tension * stretchNext,1);
+		var gForce = new Vector3(0, 9.81, 0);
+
+		var prevTension = prevSegDir.Mults(stretchPrev,1);
+		var nextTension = nextSegDir.Mults(gForce.y,1);
+
+
+		this.netForce = this.netForce.Add(gForce.Add(prevTension,1),1);
+
+		// this.velocity.Mult(prevSegDist.Divs(this.parent.segLengh,1));
+		
+		// this.velocity.Add(this.netForce.Divs(this.mass,1).Mults(dt,1));
+	}
+
+	CalcAccel(dt)
+	{
+
+		this.CalcNetForce(dt);
+
+		this.velocity = this.netForce.Mults(this.mass,1);
+
+		// this.netForce = new Vector3(0,0,0);
+	}
+
+	AddForce(force, dir)
+	{
+		this.netForce.Add(dir.Mults(force, 1));
+	}
+
+	Update(dt)
+	{
+		if(!this.isFixed)
+		{
+			this.CalcAccel(dt);
+
+		this.pos = this.pos.Add(this.velocity.Mults(dt,1),1);
+			
+		this.velocity.Mults(randomFlt(.7, .999));
+
+		this.CorrectPos(dt);
+
+		// if(this.velocity.Mag() > this.previousNode.velocity.Mag() )
+			// this.velocity.Mults(.5);
+
+
+
+			// this.accel = new Vector3(0,0,0);
+			// this.velocity = new Vector3(0,0,0);
+		}
+	}
+
+	Draw(ctx){
+
+		ctx.beginPath();
+		ctx.arc(this.pos.x, this.pos.y, this.mass, 0, 2 * Math.PI);
+		ctx.moveTo(this.pos.x, this.pos.y);
+		if(this.nextNode != null)
+		ctx.lineTo(this.nextNode.pos.x, this.nextNode.pos.y);
+		ctx.lineWidth = this.mass;
+		// ctx.strokeStyle = "rgb("+ this.velocity.Mag() +"," + this.velocity.Mag()/50 + ","+ this.velocity.Mag()/50 + ")";
+		ctx.stroke();
+	}
+
+}

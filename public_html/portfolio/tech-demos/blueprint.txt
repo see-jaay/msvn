@@ -1,0 +1,21 @@
+conway's game of life
+snake
+path finding
+mouse and maze (with path finding features?)
+3d path finding?
+fourier transforms
+light simulation
+image editor
+video editor
+sound editor / generator
+font editor
+fractal generator
+decal editor
+3d renderer / 3d modeler
+raycasting
+3d animations?
+terrain generator / navigation
+aero dynamics calculation and simulation
+fluid dynamics simulation
+physics simulation
+attempt at machine learning and image detection 

@@ -1,0 +1,46 @@
+[02-Dec-2019 21:37:19 UTC] PHP Warning:  include(util_nav.php): failed to open stream: No such file or directory in /home/faz7eh9en28h/public_html/Minimal/index.php on line 32
+[02-Dec-2019 21:37:19 UTC] PHP Warning:  include(): Failed opening 'util_nav.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/faz7eh9en28h/public_html/Minimal/index.php on line 32
+[03-Aug-2020 06:27:04 UTC] PHP Warning:  include(util_nav.php): failed to open stream: No such file or directory in /home/faz7eh9en28h/public_html/Minimal/index.php on line 32
+[03-Aug-2020 06:27:04 UTC] PHP Warning:  include(): Failed opening 'util_nav.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/faz7eh9en28h/public_html/Minimal/index.php on line 32
+[04-Aug-2020 23:11:32 UTC] PHP Warning:  include(util_nav.php): failed to open stream: No such file or directory in /home/faz7eh9en28h/public_html/Minimal/index.php on line 32
+[04-Aug-2020 23:11:32 UTC] PHP Warning:  include(): Failed opening 'util_nav.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/faz7eh9en28h/public_html/Minimal/index.php on line 32
+[05-Aug-2020 10:37:37 UTC] PHP Warning:  include(util_nav.php): failed to open stream: No such file or directory in /home/faz7eh9en28h/public_html/Minimal/index.php on line 32
+[05-Aug-2020 10:37:37 UTC] PHP Warning:  include(): Failed opening 'util_nav.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/faz7eh9en28h/public_html/Minimal/index.php on line 32
+[09-Aug-2020 21:00:48 UTC] PHP Warning:  include(util_nav.php): failed to open stream: No such file or directory in /home/faz7eh9en28h/public_html/Minimal/index.php on line 32
+[09-Aug-2020 21:00:48 UTC] PHP Warning:  include(): Failed opening 'util_nav.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/faz7eh9en28h/public_html/Minimal/index.php on line 32
+[24-Oct-2020 02:38:48 UTC] PHP Warning:  include(util_nav.php): failed to open stream: No such file or directory in /home/faz7eh9en28h/public_html/Minimal/index.php on line 32
+[24-Oct-2020 02:38:48 UTC] PHP Warning:  include(): Failed opening 'util_nav.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/faz7eh9en28h/public_html/Minimal/index.php on line 32
+[12-Jan-2021 04:37:50 UTC] PHP Warning:  include(util_nav.php): failed to open stream: No such file or directory in /home/faz7eh9en28h/public_html/Minimal/index.php on line 32
+[12-Jan-2021 04:37:50 UTC] PHP Warning:  include(): Failed opening 'util_nav.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/faz7eh9en28h/public_html/Minimal/index.php on line 32
+[02-Apr-2021 03:41:03 UTC] PHP Warning:  include(util_nav.php): failed to open stream: No such file or directory in /home/faz7eh9en28h/public_html/Minimal/index.php on line 32
+[02-Apr-2021 03:41:03 UTC] PHP Warning:  include(): Failed opening 'util_nav.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/faz7eh9en28h/public_html/Minimal/index.php on line 32
+[21-Jun-2021 06:06:38 UTC] PHP Warning:  include(util_nav.php): failed to open stream: No such file or directory in /home/faz7eh9en28h/public_html/Minimal/index.php on line 32
+[21-Jun-2021 06:06:38 UTC] PHP Warning:  include(): Failed opening 'util_nav.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/faz7eh9en28h/public_html/Minimal/index.php on line 32
+[21-Jun-2021 06:07:02 UTC] PHP Warning:  include(util_nav.php): failed to open stream: No such file or directory in /home/faz7eh9en28h/public_html/Minimal/index.php on line 32
+[21-Jun-2021 06:07:02 UTC] PHP Warning:  include(): Failed opening 'util_nav.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/faz7eh9en28h/public_html/Minimal/index.php on line 32
+[03-Aug-2021 21:59:05 UTC] PHP Warning:  include(util_nav.php): failed to open stream: No such file or directory in /home/faz7eh9en28h/public_html/Minimal/index.php on line 32
+[03-Aug-2021 21:59:05 UTC] PHP Warning:  include(): Failed opening 'util_nav.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/faz7eh9en28h/public_html/Minimal/index.php on line 32
+[03-Sep-2021 06:36:15 UTC] PHP Warning:  include(util_nav.php): failed to open stream: No such file or directory in /home/faz7eh9en28h/public_html/Minimal/index.php on line 32
+[03-Sep-2021 06:36:15 UTC] PHP Warning:  include(): Failed opening 'util_nav.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/faz7eh9en28h/public_html/Minimal/index.php on line 32
+[09-Sep-2021 06:53:31 UTC] PHP Warning:  include(util_nav.php): failed to open stream: No such file or directory in /home/faz7eh9en28h/public_html/Minimal/index.php on line 32
+[09-Sep-2021 06:53:31 UTC] PHP Warning:  include(): Failed opening 'util_nav.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/faz7eh9en28h/public_html/Minimal/index.php on line 32
+[28-Nov-2021 14:05:52 UTC] PHP Warning:  include(util_nav.php): failed to open stream: No such file or directory in /home/faz7eh9en28h/public_html/Minimal/index.php on line 32
+[28-Nov-2021 14:05:52 UTC] PHP Warning:  include(): Failed opening 'util_nav.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/faz7eh9en28h/public_html/Minimal/index.php on line 32
+[28-Nov-2021 14:06:18 UTC] PHP Warning:  include(util_nav.php): failed to open stream: No such file or directory in /home/faz7eh9en28h/public_html/Minimal/index.php on line 32
+[28-Nov-2021 14:06:18 UTC] PHP Warning:  include(): Failed opening 'util_nav.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/faz7eh9en28h/public_html/Minimal/index.php on line 32
+[16-Feb-2022 05:03:38 UTC] PHP Warning:  include(util_nav.php): failed to open stream: No such file or directory in /home/faz7eh9en28h/public_html/Minimal/index.php on line 32
+[16-Feb-2022 05:03:38 UTC] PHP Warning:  include(): Failed opening 'util_nav.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/faz7eh9en28h/public_html/Minimal/index.php on line 32
+[16-Feb-2022 05:05:07 UTC] PHP Warning:  include(util_nav.php): failed to open stream: No such file or directory in /home/faz7eh9en28h/public_html/Minimal/index.php on line 32
+[16-Feb-2022 05:05:07 UTC] PHP Warning:  include(): Failed opening 'util_nav.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/faz7eh9en28h/public_html/Minimal/index.php on line 32
+[16-Feb-2022 05:57:51 UTC] PHP Warning:  include(util_nav.php): failed to open stream: No such file or directory in /home/faz7eh9en28h/public_html/Minimal/index.php on line 32
+[16-Feb-2022 05:57:51 UTC] PHP Warning:  include(): Failed opening 'util_nav.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/faz7eh9en28h/public_html/Minimal/index.php on line 32
+[16-Feb-2022 05:59:13 UTC] PHP Warning:  include(util_nav.php): failed to open stream: No such file or directory in /home/faz7eh9en28h/public_html/Minimal/index.php on line 32
+[16-Feb-2022 05:59:13 UTC] PHP Warning:  include(): Failed opening 'util_nav.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/faz7eh9en28h/public_html/Minimal/index.php on line 32
+[16-Feb-2022 06:58:24 UTC] PHP Warning:  include(util_nav.php): failed to open stream: No such file or directory in /home/faz7eh9en28h/public_html/Minimal/index.php on line 32
+[16-Feb-2022 06:58:24 UTC] PHP Warning:  include(): Failed opening 'util_nav.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/faz7eh9en28h/public_html/Minimal/index.php on line 32
+[16-Feb-2022 07:00:10 UTC] PHP Warning:  include(util_nav.php): failed to open stream: No such file or directory in /home/faz7eh9en28h/public_html/Minimal/index.php on line 32
+[16-Feb-2022 07:00:10 UTC] PHP Warning:  include(): Failed opening 'util_nav.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/faz7eh9en28h/public_html/Minimal/index.php on line 32
+[07-May-2022 02:25:21 UTC] PHP Warning:  include(util_nav.php): failed to open stream: No such file or directory in /home/faz7eh9en28h/public_html/Minimal/index.php on line 32
+[07-May-2022 02:25:21 UTC] PHP Warning:  include(): Failed opening 'util_nav.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/faz7eh9en28h/public_html/Minimal/index.php on line 32
+[07-May-2022 02:26:10 UTC] PHP Warning:  include(util_nav.php): failed to open stream: No such file or directory in /home/faz7eh9en28h/public_html/Minimal/index.php on line 32
+[07-May-2022 02:26:10 UTC] PHP Warning:  include(): Failed opening 'util_nav.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/faz7eh9en28h/public_html/Minimal/index.php on line 32

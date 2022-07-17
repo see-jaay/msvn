@@ -1,0 +1,51 @@
+
+
+.lb-layer {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  /* transition: transform .5s linear; */
+  transition: transform .5s linear, opacity .5s linear, filter .5s linear;
+}
+
+.msvn-place {
+  border: black 1.6px solid;
+  border-radius: 14px;
+}
+
+.lb-layer.focus {
+
+}
+
+.lb-layer.fcs{
+  transform: scale(1);
+  opacity: 1;
+  filter: blur(0px);
+  pointer-events: all;
+}
+.lb-layer:not(.fcs) {
+  pointer-events: none;
+}
+.lb-layer.fm1 {
+  transform: scale(.85);
+  opacity: .5;
+  filter: blur(8px);
+}
+.lb-layer.fp1 {
+  transform: scale(1.35);
+  opacity: .5;
+  filter: blur(8px);
+}
+.lb-layer.fm2 {
+  transform: scale(.7);
+  opacity: .2;
+  filter: blur(16px);
+}
+.lb-layer.fp2 {
+  transform: scale(1.7);
+  opacity: .2;
+  filter: blur(16px);
+}
+.lb-layer.hdn {
+  opacity: 0;
+}

@@ -1,0 +1,157 @@
+
+
+#cat_slts_wrapper {
+	position: absolute;
+	top: 2rem;
+	bottom:  2rem;
+	left:  2rem;
+	right:  2rem;
+	background: rgba(var(--background-color-rgb), .95);
+	color: var(--background-color);
+	border: solid 1px var(--text-color);
+	z-index: 20;
+	/*backdrop-filter:invert(1) blur(15px);*/
+
+	--window-background: rgb(230,230,230);
+	box-shadow: 0 0 2rem rgba(0,0,0,.5);
+
+	user-select: none;
+}
+
+#cat_slts_inner {
+	display: grid;
+	grid-template-rows: 2rem auto;
+	width: 100%;
+	height: 100%;
+	grid-gap: 0px;
+	overflow: hidden;
+}
+
+
+.nav {
+	grid-row: 1;
+	width: 100%;
+	height: 100%;
+	background: var(--window-background);
+	border-bottom: solid 1px var(--text-color);
+	line-height: 2rem;
+	position: relative;
+}
+
+.cat_slts_nav {
+	border: none;
+	box-shadow: 0 0 20px rgba(0,0,0, .25);
+	z-index: 20;
+}
+.nav-inner {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: .75rem;
+	left: .75rem;
+}
+.nav-title {
+	position: absolute;
+	width: 50%;
+	left: 50%;
+	transform: translateX(-50%);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: center;
+
+}
+
+.close {
+	position: absolute;
+	right: 0;
+	-webkit-text-stroke: .8px var(--text-color);
+}
+
+#cat_slts_content {
+	grid-row: 2;
+	width: 100%;
+	height: 100%;
+	background: blur;
+	overflow: hidden;
+	position: relative;
+}
+
+#cat_slts_footer {
+	grid-row: 3;
+	width: 100%;
+	height: 100%;
+	background: var(--background-color);
+	/*border-top: solid 1.5px var(--text-color);*/
+}
+
+.window-wrapper {
+	background: var(--window-background);
+	color: var(--text-color);
+	display: grid;
+	position: absolute;
+	width: 14rem;
+	height: 10rem;
+	border: solid 1px var(--text-color);
+	box-shadow: 0px 0px 20px rgba(0,0,0,.25);
+}
+
+.window-inner {
+	display: grid;
+	width: 100%;
+	height: 100%;
+	grid-template-rows: 2rem auto 2rem;
+}
+
+.window-content {
+	grid-row: 2;
+	width: 100%;
+	height: 100%;
+}
+
+.window-scaletab {
+	position: absolute;
+	bottom: .1rem;
+	right: .1rem;
+
+	color: var(--text-color);
+}
+
+.window-scaleright {
+	position: absolute;
+	right: -2.5px;
+	top: 5px;
+	bottom:5px;
+	width: 5px;
+}
+.window-scaleleft {
+	position: absolute;
+	left: -2.5px;
+	top: 5px;
+	bottom: 5px;
+	width: 5px;
+}
+
+.window-scaletop {
+	position: absolute;
+	left: 5px;
+	right: 5px;
+	top: -2.5px;
+	height: 5px;
+}
+
+.window-scalebottom {
+	position: absolute;
+	left: 5px;
+	right: 5px;
+	bottom: -2.5px;
+	height: 5px;
+}
+
+.window-scaleright:hover, .window-scaleleft:hover {
+	cursor: w-resize;
+}
+
+.window-scaletop:hover, .window-scalebottom:hover {
+	cursor: s-resize;
+}

@@ -1,0 +1,220 @@
+/*-------------------------------- Utilities CSS -----------------------------------------------*/
+
+
+#loginout_container {
+  position: absolute;
+  right: 14rem;
+  top: 2rem;
+
+  cursor: pointer;
+}
+
+#loginout_container > .loginout > button {
+      background: none;
+      border: none;
+      font-family: 'Courier_Prime_Code';
+      height: max-content;
+      cursor: pointer;
+      text-transform: uppercase;
+}
+
+#search_container {
+  position: absolute;
+  right: 6rem;
+  top: 2rem;
+
+  cursor: pointer;
+}
+
+#cart_container {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+
+  cursor: pointer;
+}
+
+#util_wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  pointer-events: none;
+}
+
+#util_wrapper > * {
+  pointer-events: all;
+}
+
+#search_icon {
+  stroke: var(--text-color);
+  fill: var(--text-color);
+  width: 1.3rem;
+}
+
+
+#search_close {
+  cursor: pointer;
+  font-size: 20px;
+  grid-column: 6;
+  grid-row: 1;
+  width: max-content;
+  margin: auto;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+
+#search_form {
+  position: absolute;
+  width: 75%;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+
+  transition-property: transform, top;
+  transition: .5s ease-in-out;
+}
+
+#search_bar {
+  background: none;
+  border: none;
+  color: var(--text-color);
+  border-bottom: solid 1.5px var(--text-color);
+  font-family: mollen;
+  font-variant: all-petite-caps;
+  width: 100%;
+  font-size: 4rem;
+}
+
+#search_results {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 100%;
+  opacity: 0;
+  transition-property: top, opacity;
+
+  transition: .75s ease-in-out;
+}
+
+#search_item {
+  width: max-content;
+  margin: 0 auto;
+}
+
+#no_results: {
+  grid-column: span 5;
+}
+
+#cart_icon {
+  stroke: var(--text-color);
+  fill: var(--text-color);
+  width: 1.5rem;
+}
+#cart_count {
+  position: absolute;
+  top: -.75rem;
+  right: -.75rem;
+  width: .8rem;
+  height: .8rem;
+  background: var(--text-color);
+  border-radius: 1rem;
+  line-height: 1rem;
+  padding: 2px;
+  opacity: 0
+}
+#cart_count > * {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  line-height:.8rem;
+  font-size: .75rem;
+  color: var(--background-color);
+  -webkit-text-stroke: .4px var(--background-color);
+}
+
+#cart_close {
+  cursor: pointer;
+  font-size: 20px;
+  grid-column: 6;
+  grid-row: 1;
+  width: max-content;
+  margin: auto;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+
+#cart_wrapper {
+  position: absolute;
+  left: 2rem;
+  top: 2rem;
+  opacity: 1;
+
+  transition-property: opacity, left;
+  transition: .5s ease-in-out;
+}
+
+#checkout_wrapper {
+  position: absolute;
+  left: 100%;
+  top: 2rem;
+  opacity: 0;
+
+  transition-property: opacity, left;
+  transition: .5s ease-in-out;
+}
+
+#cart_checkout {
+  width: max-content;
+  height: max-content;
+  line-height: 1.5rem;
+  font-family: mollen;
+  font-size: 1rem;
+  padding: .5rem;
+  cursor: pointer;
+
+  background: var(--text-color);
+  color: var(--background-color);
+
+  -webkit-text-stroke: .3 var(--background-color);
+}
+#exit_checkout {
+  font-family: mollen;
+  font-size: 1rem;
+
+  -webkit-text-stroke: .3 var(--text-color);
+}
+
+.cart-item {
+  display: grid;
+  grid-template-columns: repeat(5,auto);
+  margin: 0 auto;
+}
+
+#item_count {
+}
+
+#item_count > *{
+  width: max-content;
+  margin: 0 auto;
+}
+.count-adjust {
+  font-size: 2rem;
+  cursor: pointer;
+  width: max-content;
+  height: max-content;
+}
+
+
+textarea:focus, input:focus {
+  outline: none;
+}
+
+::placeholder {
+    color: rgba(var(--text-color-rgb), .2);
+}
+
+
+/*-------------------------------- Utilities CSS -----------------------------------------------*/

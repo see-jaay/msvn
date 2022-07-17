@@ -1,0 +1,113 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background: rgba(100,100,100,.25);
+  user-select: none;
+}
+
+#admn_window {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+.window-wrapper {
+  position: absolute;
+  top:0;
+  pointer-events: none;
+}
+.window-wrapper.full, .win-inner {
+  width: 100%;
+  height: 100%;
+}
+.win-infinite {
+  pointer-events: all;
+}
+.win-infinite:focus{
+  background: red;
+}
+
+.win-infinite > .anchored {
+  transform:scale(.9);
+  /* transition: all 0.1s linear; */
+}
+
+
+.anchored.tester {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: red;
+  top: 0;
+  left: 0;
+}
+
+
+.title-bar {
+  position: relative;
+  height: 1rem;
+  margin-bottom: .75rem;
+}
+.title-bar > * {
+  float: left;
+}
+.title-bar > .utils {
+  float:right;
+  padding: 3px 7px;
+}
+.title-bar > .utils > #loginout {
+  top: 0;
+  right: 0;
+  padding: 3px 7px;
+}
+
+.title-bar > .title {
+  padding: 3px 7px;
+}
+
+
+
+
+/* .panel-container {
+  width: 100%;
+  height: 100%;
+}
+.panel-wrapper {
+  width: max-content;
+  height: 2rem;
+  display: inline-block;
+} */
+/* .panel-tab {
+  margin: 3px 7px;
+  cursor: pointer;
+}
+.panel-inner {
+  position: absolute;
+  border-top: 1px black solid;
+  top: 3.25rem;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0 7px;
+  padding: 7px 0px;
+}
+.panel-wrapper.active > .panel-inner {
+  display: 1;
+  pointer-events: all;
+}
+.panel-wrapper:not(.active) > .panel-inner {
+  display: none;
+  pointer-events: none;
+} */

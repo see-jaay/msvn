@@ -1,0 +1,48 @@
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+navigation functionality ----- done
+pages (shop, info, gallery, home) -----
+navigation transitions
+loading screen beautification
+scrollbar controls - add up delta x/y during scroll and when a variable distance is exceeded jump to new focal point.
+404 page
+display of product data
+checkout functionality
+checkout beautification
+cart functionality
+cart flyout
+cart beautification
+payment info (api)
+shipping info
+search functionality
+search results flyout
+user profiles
+subscriptions
+newsletter alerts
+need a website? (info page)
+floating content boxes
+UI decals + beautification
+alert tab
+alert flyout
+alert navigation
+image/video post effects (image/video editor)
+dynamic background colors + effects
+3d product display (webgl)
+custom cursor
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+I. navigation
+  1. functionality *****
+  2. transitions
+II.pages
+  1. Shop page
+    a. shop accessories
+      
+    b. shop men
+    c. shop women

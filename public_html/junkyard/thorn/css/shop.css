@@ -1,0 +1,173 @@
+
+.category-wrapper {
+  cursor: pointer;
+  /*overflow:hidden;*/
+  border : dotted .5px var(--text-color);
+}
+
+.product-container, .product-inner {
+  width: 100%;
+  height: 100%;
+}
+
+.soldout-pattern, .soldout-text{
+  opacity: 0;
+  transition: opacity .25s ease-in-out;
+
+  position: absolute;
+  top:0;
+  fill:var(--text-color);
+}
+.product-details:hover > .soldout-pattern, .product-details:hover > .soldout-text{
+  opacity: .75;
+}
+
+.soldout-pattern {
+  position: absolute;
+  top: 4px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 50%, 35% 50%, 35% 53%, 65% 53%, 65% 47%, 35% 47%, 35% 50%, 0 50%);
+}
+
+.soldout-text {
+  width: 30%;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
+  background: red;
+}
+
+.comingsoon-text {
+  opacity: 1;
+  color: rgba(var(--text-color-rgb),.5);
+  width: 40%;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
+}
+
+.comingsoon-pattern{
+  opacity: .5;
+
+  position: absolute;
+  top:0;
+  fill:var(--text-color);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 50%, 28% 50%, 28% 53%, 72% 53%, 72% 47%, 26% 47%, 26% 50%, 0 50%);
+}
+
+
+
+
+
+
+
+
+/*Regular Query*/
+@media only screen and (min-width: 480px) {
+  
+  #products_wrapper {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+  }
+
+  #content_wrapper.shop {
+    position: absolute;
+    top: 5.5rem;
+    bottom: 5.5rem;
+    left: 2rem;
+    right: 2rem;
+  }
+
+  #products_wrapper {
+    display: grid;
+    grid-template-columns: repeat(10000, auto);
+    grid-gap: 2rem;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+
+  #products_wrapper .product-wrapper {
+    height: 100%;
+    width: 30rem;
+    border: dotted .1px;
+    cursor: pointer;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  #categories_wrapper {
+/*    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    grid-gap: 2rem;
+    height: 100%;*/
+    overflow: scroll;
+  }
+
+  .category-women {
+      left: 4rem;
+      top: 4rem;
+      width: 40%;
+      height: 40%;
+  }
+
+  .category-men {
+      right: 4rem;
+      bottom: 4rem;
+      width: 40%;
+      height: 40%;
+  }
+
+  .category-accessories {
+      left: 28rem;
+      bottom: 8rem;
+      width: 30%;
+      height: 30%;
+  }
+
+  .category-newarrivals {
+      right: 28rem;
+      top: 8rem;
+      width: 30%;
+      height: 30%;
+  }
+
+
+
+  .category-title {
+    font-family: mollen;
+    color: rgba(var(--text-color-rgb),.1);
+    font-size: 2rem;
+    /*transform: rotate(90deg);*/
+    /*transform-origin: top left;*/
+    /*margin-left: 5rem;*/
+    /*margin-top: 1rem;*/
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    -webkit-text-stroke-width: .75px;
+  }
+
+
+
+}
+
+
+
+
+/*Mobile Query*/
+@media only screen and (max-width: 480px) {
+
+}
+

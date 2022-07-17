@@ -1,0 +1,223 @@
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------- Nav CSS -----------------------------------------------*/
+
+#title {
+    /*width: 10rem;*/
+    height: 1rem;
+    padding: .5rem;
+    /*position: absolute;*/
+    top: 2rem;
+    left: 2rem;
+    margin-bottom: 1rem;
+}
+
+#title-inner {
+    width: max-content;
+    height: max-content;
+    margin: 0 auto;
+}
+
+#home_title {
+    /*width: 10rem;*/
+    height: 1rem;
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translateY(-50%) translateX(-50%);
+      transform: translateY(-50%) translateX(-50%);
+
+    --grid:1;
+}
+
+#home_title {
+  letter-spacing: .7rem;
+  text-indent: .7rem;
+}
+
+#home_title_inner {
+    width: max-content;
+    height: max-content;
+    margin: 0 auto;
+}
+
+
+#nav_wrapper {
+    position: absolute;
+    width: 10rem;
+    height: max-content;
+    left: 2rem;
+    bottom: 2rem;
+}
+
+#secondary_nav_wrapper {
+  position: absolute;
+  width: max-content;
+  height: max-content;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+.menu.primary {
+    width: max-content;
+    height: max-content;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    font-size: 11px;
+    cursor: default;
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
+}
+.menu.primary > * {
+  display: inline-block;
+}
+.menu.primary > li {
+  display: inline-block;
+  font-size: 12px;
+  width: max-content;
+  height: 75%;
+  transition: .25s filter linear;
+  margin: 0 24px;
+}
+
+#secondary_menu_main {
+  width: max-content;
+  height: max-content;
+  padding: 0;
+  margin: 0;
+  font-size: 11px;
+  cursor: default;
+}
+
+
+
+#secondary_menu_main > li {
+  display: inline-block;
+  font-size: 12px;
+  width: max-content;
+  height: 100%;
+  margin: 0;
+  margin-left: 3rem;
+  transition: .25px filter linear;
+}
+
+#footer_wrapper {
+  display: none;
+}
+
+.menu.primary > li:not(.disabled), #secondary_menu_main > li:not(.disabled) > *, #home_title {
+    cursor: pointer;
+}
+
+.menu.primary > li:hover:not(.disabled) {
+    /*filter:brightness(75%);*/
+}
+
+.menu.primary > li > span, #secondary_menu_main > li > * > span {
+    opacity: 0;
+    transition: .5s opacity;
+}
+
+.menu.primary > li:not(.disabled):hover > span,
+#secondary_menu_main > li:not(.disabled):hover > * > span {
+    opacity:1;
+}
+
+.menu.primary > li, #secondary_menu_main > li > *, #home_title_inner{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+
+
+
+.menu > li:not(.disabled), .secondary-menu > li:not(.disabled) > * {
+    cursor: pointer;
+}
+
+.menu > li:hover:not(.disabled) {
+    /*filter:brightness(75%);*/
+}
+
+.menu > li > span, .secondary-menu > li > * > span {
+    opacity: 0;
+    transition: .5s opacity;
+}
+
+.menu > li:not(.disabled):hover > span,
+.secondary-menu > li:not(.disabled):hover > * > span {
+    opacity:1;
+}
+
+.menu > li, .secondary-menu > li > *{
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu > li > * {
+  display: inline-block;
+}
+
+
+
+
+
+
+li.disabled {
+    text-decoration: line-through;
+    opacity: .5;
+
+    pointer-events: none;
+}
+
+.disabled > *, .menu .current-page {
+    cursor: default;
+}
+
+
+/*----------------------------------- Mobile CSS --------------------------------------------*/
+
+
+@media only screen and (min-width: 480px) {
+
+  .nav-wrapper {
+    position: absolute;
+    width: 10rem;
+    height: max-content;
+    left: 2rem;
+    bottom: 2rem;
+    width: max-content;
+  }
+
+  .nav-wrapper .menu {
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-wrapper .menu > li {
+    display: inline-block;
+    font-size: 12px;
+    height: 75%;
+    transition: .25s filter linear;
+  }
+
+}
+
+
+@media only screen and (max-width: 480px) {
+
+}

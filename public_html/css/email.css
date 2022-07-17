@@ -1,0 +1,26 @@
+
+
+@font-face {
+  font-family: 'courier_prime_code';
+  src: local('courier_prime_code'),url('../thorn/fonts/courier_prime_code.woff2') format('woff2'),
+  url('../thorn/fonts/courier_prime_code.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'courier_prime_code';
+  font-style: normal;
+  font-weight: normal;
+  src: local('courier_prime_code'),url('https://www.machsevn.com/thorn/fonts/courier_prime_code.woff2') format('woff2'),
+       url('https://www.machsevn.com/thorn/fonts/courier_prime_code.woff') format('woff');
+}
+
+
+body {
+  background:red;
+  /* background-color: #C4C4C3; */
+}
+.main-container {
+  background-color: #f6e700;
+}

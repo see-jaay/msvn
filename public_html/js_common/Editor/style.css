@@ -1,0 +1,177 @@
+
+
+body {
+  background: rgba(100,100,100,.25);
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+
+
+/* #edtr_wrapper {
+  color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+} */
+
+#edtr_window {
+  /* border: black 5px solid; */
+  width: 100vw;
+  height: 100vh;
+  pointer-events: all;
+}
+
+#edtr_window > * {
+  pointer-events: all;
+}
+
+#edtr_rndr {
+  position: absolute;
+  min-width: 10%;
+  max-width: 100;
+  height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* transform: translate(-50%, -50%); */
+  background: white;
+  border-radius: 5px;
+  box-shadow: rgba(0,0,0,.1) 0 0 10px;
+  /* overflow: hidden; */
+  /* z-index: -1; */
+  /* pointer-events: all; */
+}
+
+#edtr_rndr > .inner {
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+
+.rsw {
+  position: absolute;
+  top: 0;
+  width: 0.5rem;
+  height: 100%;
+  cursor: ew-resize;
+}
+.rsh {
+  position: absolute;
+  height: 0.5rem;
+  width: 100%;
+  cursor: ns-resize;
+}
+
+.rsl {
+  transform: translateX(-100%);
+}
+.rst {
+  transform: translateY(-100%);
+}
+.rsr {
+  left: 100%;
+}
+.rsb {
+  top: 100%;
+}
+
+#edtr_rndr > .handle {
+  position: absolute;
+}
+.rs-w {
+  top: 0;
+  width: .5rem;
+  height: 100%;
+  cursor: ew-resize;
+}
+
+.edtr-toolbar {
+  position: absolute;
+  width: 2rem;
+  height: max-content;
+  right: 1rem;
+  width:4rem;
+}
+
+.edtr-window {
+  pointer-events: all;
+  /* padding: 17px; */
+  position: absolute;
+  border-radius: 5px;
+  /* border: solid black 1px; */
+  background: rgba(255,255,255, 1);
+}
+.edtr-window.primary {
+  width: 300px;
+  height: 475px;
+  right: 3.5rem;
+  top: 3.5rem;
+  height: max-content;
+}
+
+.edtr-window .inner-wrapper {
+  padding: 17px;
+  border-radius: 5px;
+  width: 90%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+.panel-wrapper {
+  pointer-events: all;
+  height: 2rem;
+}
+.panel-container {
+  background: yellow;
+  position: relative;
+  right: 100%;
+  width: max-content;
+  /* display: none; */
+}
+
+.panel-wrapper:not(.max) > .panel-container {
+  display: none;
+}
+.panel-wrapper.max > .panel-container {
+  display: visible;
+}
+
+.panel-wrapper.min:not(.max) > .panel-handle {
+  color: red;
+}
+.panel-wrapper.max > .panel-handle {
+  color: white;
+}
+.panel-handle {
+  position: absolute;
+  /* top: 80%; */
+  width: 2rem;
+  height: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  /* z-index: 10; */
+}
+
+
+#win_style input {
+  border: none;
+  background: none;
+  text-align: center;
+  outline: none;
+  border-radius: 3px;
+}
+
+#win_style input:focus{
+  background: rgba(0,0,0,.075);
+}
+
+.kv-wrapper > input{
+  /* float: left */
+  width: 46%;
+  /* margin: auto; */
+}
+.kv-wrapper > span {
+  margin: 0 2%;
+}

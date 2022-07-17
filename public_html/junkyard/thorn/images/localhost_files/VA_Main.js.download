@@ -1,0 +1,62 @@
+
+
+
+
+
+// var vines = [];
+// var pen = new Pendulum();
+// var pen2 = new Pendulum();
+
+// nodeCount, vineLength, vineMass, vineTension, vinePosition
+var v3 = new Vine(10, 1000, 10, 200, new Vector3(300,0,0));
+var v4 = new Vine(10, 1500, 10, 200, new Vector3(1500,0,0));
+var v5 = new Vine(10, 1500, 0, 200, new Vector3(2000,0,0));
+
+
+
+
+//  vineData = [ vine length, vine position ]
+
+function VineInit() {
+	// for(var i = 0; i < vineData.size; i++)
+	// {
+	// 	vines.push(new Vine(vineData[i][0], vindData[i][1]));
+	// }
+	v3.Init();
+	v4.Init();
+	v5.Init();
+
+}
+
+var wForce = 0;
+
+function VineUpdate(dt,ctx) {
+	v3.Update(dt);
+	v4.Update(dt);
+	v5.Update(dt);
+
+
+	ctx.clearRect(0,0,1000,1000);
+	// pen.Draw(ctx);
+	// pen2.Draw(ctx);
+
+	v3.Draw(ctx);
+	v4.Draw(ctx);
+	v5.Draw(ctx);
+
+
+	wForce = 40;
+
+	v3.ApplyWind(wForce, new Vector3(-1, 0, 0));
+	v3.ApplyWind(wForce, new Vector3(-.5, 0, 0));
+
+	v4.ApplyWind(wForce, new Vector3(-1, 0, 0));
+	v4.ApplyWind(wForce, new Vector3(-.8, 0, 0));
+
+	v5.ApplyWind(wForce, new Vector3(-1, 0, 0));
+	v5.ApplyWind(wForce, new Vector3(-.4, 0, 0));
+}
+
+
+// Physics Function ??
+// 

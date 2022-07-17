@@ -1,0 +1,232 @@
+#utilities_wrapper {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+
+#loginout {
+  position: absolute;
+  top: 1.5rem;
+  right: 1rem;
+  cursor: pointer;
+  padding: 2px 4px;
+}
+
+#search_bar {
+    position: absolute;
+    top: 1.5rem;
+    left: 50%;
+    padding: 2px 24px 2px 15px;
+    border-radius: 50px;
+    /* border: 2px black solid; */
+    width: 30%;
+    z-index: 3;
+    background: rgba(var(--text-color-rgb), .05);
+    transition: background .5s ease-in-out;
+    transform: translateX(-50%);
+}
+
+#search_bar > input {
+  background: none;
+  border: none;
+  padding-top: 5px;
+  /* border-radius: 50px; */
+  /* border-bottom: rgba(0,0,0,0) 1.5px solid; */
+  width: 100%;
+  height: 1.3rem;
+  max-height: 50px;
+  line-height: 1rem;
+  font-family: 'Courier_Prime_Code';
+  /* opacity: 0; */
+  transition: opacity .5s ease-in-out;
+}
+
+#search_bar > svg {
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  /* margin-left: -20px; */
+  /* margin-top: 2.5; */
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5px;
+}
+
+#search_bar:focus-within {
+  background: rgba(var(--text-color-rgb), .15);
+}
+
+#search_bar > input:focus {
+  /* border-bottom: rgba(var(--text-color-rgb), .75) 1.5px solid; */
+  /* opacity: 1; */
+  /* content: ''; */
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+::selection {
+  color: var(--background-color);
+  background: var(--text-color)
+}
+
+@media screen and (max-width: 580px)
+{
+  #search_bar {
+    display: none;
+  }
+  /* #search_bar_mobile{} */
+
+}
+#cart {
+  position: absolute;
+}
+#info{
+  position: absolute;
+}
+
+.flyout {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(10px);
+}
+
+#login_flyout {
+  z-index: 4;
+}
+
+#login_flyout > .inner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  height: max-content;
+  padding: 4rem 2rem;
+  transform: translate(-50%, -50%);
+}
+
+#login_flyout > .inner > .close {
+  /* position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  padding: 4px;
+  font-size: 1.2rem; */
+}
+
+#btn_hbgr > svg, #login_close > svg {
+  stroke: var(--text-color);
+}
+#btn_hbgr > svg > line, #login_close > svg > line {
+  transform-origin: top center;
+  stroke-width: .7;
+  transition: transform .25s ease-in-out;
+}
+#btn_hbgr:not(.active) > svg > .l1{
+  transform: translateY(25%);
+}
+#btn_hbgr:not(.active) > svg > .l2{
+  transform: translateY(50%);
+}
+#btn_hbgr:not(.active) > svg > .l3{
+  transform: translateY(75%);
+}
+
+#btn_hbgr.active > svg > .l1{
+  transform: translateY(50%) rotate(-45deg);
+}
+#btn_hbgr.active > svg > .l2{
+  transform: translateY(50%) scaleX(0);
+}
+#btn_hbgr.active > svg > .l3{
+  transform: translateY(50%) rotate(-135deg);
+}
+
+#login_flyout:not(.show) > .close > svg > .l1 {
+  transform: translateY(45%);
+}
+#login_flyout:not(.show) > .close > svg > .l2 {
+  transform: translateY(55%);
+}
+
+#login_flyout.show > .close > svg > .l1 {
+  transform: translateY(50%) rotate(-45deg);
+}
+#login_flyout.show > .close > svg > .l2 {
+  transform: translateY(50%) rotate(45deg);
+}
+
+#login_close {
+  width: 2.5rem;
+  height: 2.5rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+
+#login_form > input {
+  margin-bottom: .75rem;
+  width: 100%;
+  text-align: center;
+  border: 1.75px var(--text-color) solid;
+  background: none;
+  border-radius: 2px;
+
+}
+
+#login_form > .submit {
+  float: right;
+  margin-left: 50%;
+  transform: translateX(-200%);
+}
+
+.login-form > .submit {
+  margin-left: 50%;
+  transform: translate(-50%, 20px);
+  padding: 2px 10px;
+}
+
+/* #login_form > .submit */
+
+#login_form > * {
+  display: block;
+}
+
+.input-field {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  max-width: 200px;
+  min-width: 100px;
+}
+
+.input-field > .prompt {
+  position: absolute;
+  top:100%;
+  margin-top: -.7rem;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: red;
+  transform: scale(.75);
+}
+
+
+#mobile_log {
+  position: absolute;
+  bottom: 4rem;
+  left: 2rem;
+  opacity: .5;
+  padding: 0;
+}
+
+#mobile_log > li {
+  display: block;
+}

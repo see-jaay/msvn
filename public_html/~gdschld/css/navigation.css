@@ -1,0 +1,110 @@
+#title {
+  text-transform: uppercase;
+  font-family: 'merriweatherultrabold_italic';
+  /* font-family: 'bsod'; */
+  font-size: 4rem;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  color: var(--text-color);
+  line-height: 3.5rem;
+}
+
+#menu {
+  opacity: 1;
+  pointer-events: all;
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  font-size: 1.2rem;
+}
+#menu > * {
+/* float: left; */
+/* margin-left:  30px; */
+/* display: inline-block; */
+margin-top: 17px;
+line-height: .5rem;
+}
+/* #menu > *:nth-child(){
+  display: inline-block;
+  float: left;
+  margin-left: 40px;
+} */
+
+#menu, #mobile_menu {
+  font-family: 'bsod';
+  text-transform: uppercase;
+  /* font-variant: small-caps; */
+}
+.navdest:not(.dis){
+  cursor: pointer;
+}
+.navdest.disabled {
+
+}
+
+
+
+#mobile_menu {
+  opacity: 0;
+  pointer-events: none;
+}
+#btn_hbgr {
+  display: none;
+}
+
+
+/* mobile specific css */
+@media (max-aspect-ratio: 3/4) {
+  #menu {
+    opacity: 0;
+    pointer-events: none;
+  }
+  #mobile_menu {
+    opacity: 1;
+    pointer-events:all;
+  }
+
+  #btn_hbgr {
+    display: inline-block;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    width: 2.5rem;
+
+    /* ????????? */
+    z-index: 3;
+  }
+  #mobile_menu_flyout {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    backgdrop-filter: blur(50px);
+
+  }
+
+  #mobile_menu > .flyout > .mnu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.75);
+    height: max-content;
+    width: 300px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  #mobile_menu > .flyout > .mnu > * {
+    font-size: 1.5rem;
+    width: max-content;
+    display: block;
+    padding: .25rem 1rem;
+    margin: 0;
+    margin: 0 0 1rem 0;
+
+  }
+
+
+}

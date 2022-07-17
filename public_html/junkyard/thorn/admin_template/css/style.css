@@ -1,0 +1,66 @@
+
+body {
+    background:rgba(0,0,0,.1);
+}
+
+#frame_wrap { 
+    width: 600px;
+    height: 390px; 
+    padding: 0; 
+    /*overflow: hidden; */
+}
+
+
+/*scaling the frame/web page for editing purposes*/
+
+#site_frame {
+
+    position: absolute;
+    width: 800px; 
+    height: 520px; 
+    border: none;
+    border-radius:7.5px;
+
+    -ms-zoom: 0.5;
+    -moz-transform: scale(1);
+    -moz-transform-origin:0 0;
+    -o-transform: scale(1);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(1);
+    -webkit-transform-origin: 0 0;
+
+}
+
+.frame_scaler {
+    position: absolute;
+    height: 5px;
+    width: 5px;
+}
+/*
+#frame_scale_h {
+    background:green;
+}
+
+#frame_scale_w {
+    background:blue;
+}
+#frame_scale_wh {
+    background:red;
+}*/
+
+.s-resize {
+    cursor: s-resize;
+}
+
+.e-resize {
+    cursor: e-resize;
+}
+
+.se-resize {
+    cursor: se-resize;
+}
+
+iframe > #testText:hover {
+    color:red;
+}
+

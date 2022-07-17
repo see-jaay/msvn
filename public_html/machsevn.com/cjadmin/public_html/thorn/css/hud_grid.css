@@ -1,0 +1,12 @@
+.hud-grid {
+	position: relative;
+}
+
+.hg-pri {
+	width: 50%;
+	height: 50%;
+}
+
+.hg-item {
+	position: absolute;
+}

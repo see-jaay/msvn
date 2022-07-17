@@ -1,0 +1,31 @@
+{
+  "name": "bloom",
+  "version": "1.0.0",
+  "description": "A lower level visual editor for web development.",
+  "main": "core.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "wp-start": "webpack serve",
+    "buld": "babel src -d lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/see-jaay/bloom.git"
+  },
+  "author": "@see_jaay : c. d. foster",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/see-jaay/bloom/issues"
+  },
+  "homepage": "https://github.com/see-jaay/bloom#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.18.5",
+    "@babel/preset-env": "^7.18.2",
+    "css-loader": "^6.7.1",
+    "ts-loader": "^9.3.0",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0"
+  }
+}

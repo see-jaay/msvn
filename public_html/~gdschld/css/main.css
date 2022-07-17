@@ -1,0 +1,15 @@
+#code1, #code2{
+  width: 500px;
+  height: 200px;
+  border: black solid 1px;
+  position: absolute;
+  left: 5rem;
+  /* tom: 0; */
+  opacity: 0;
+}
+
+#code2{
+  right: 0;
+  top: 0;
+  left:auto;
+}

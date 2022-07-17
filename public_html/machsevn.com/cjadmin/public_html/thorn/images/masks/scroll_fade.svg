@@ -1,0 +1,11 @@
+<svg>	
+  <defs>
+	  <mask id="mask1" maskUnits="objectBoundingBox" maskContentUnits="objectBoundingBox">
+	   <linearGradient id="grad" gradientUnits="objectBoundingBox" x2="0" y2="1">
+	    <stop stop-color="white" offset="0"/>
+	    <stop stop-color="black" stop-opacity="0" offset="1"/>
+	   </linearGradient>
+	   <rect x="0" y="0" width="100" height="100" fill="url(#mask1)"/>
+	  </mask>
+  </defs>
+</svg>

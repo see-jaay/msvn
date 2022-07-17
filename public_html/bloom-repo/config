@@ -1,0 +1,7 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = true
+[remote "live"]
+	url = https://github.com/see-jaay/bloom.git
+	fetch = +refs/heads/*:refs/remotes/live/*

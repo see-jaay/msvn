@@ -1,0 +1,32 @@
+.lrg {
+  position: absolute;
+  width: 400px;
+  height: 600px;
+  /* border: black solid 1.7px; */
+  border-radius: 7px;
+  left: 400px;
+}
+
+.med {
+  width: calc(400px *.66);
+  height: calc(600px *2/3);
+  position: absolute;
+  left: 820px;
+  /* border: black solid 1.7px; */
+  border-radius: 7px;
+}
+
+.sml {
+  width: calc(400px * .33);
+  height: calc(600px * .33);
+  position: absolute;
+  left: 820px;
+  top: calc(600px * 2/3 + 20px);
+  /* border: black solid 1.7px; */
+  border-radius: 7px;
+}
+
+.lrg, .med, .sml {
+  background: rgba(200,200,200);
+  padding: 2px;
+}
